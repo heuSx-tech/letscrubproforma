@@ -199,3 +199,48 @@ background-position: center;
       margin-bottom: 20px;
   border: 1px solid #ffffffe4;
 }
+
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px;
+    background-size: 300px;
+  }
+
+  .form-box {
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+
+  .top-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .top-bar select,
+  .top-bar button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    max-width: 200px;
+  }
+
+  .kart-icerik {
+    padding: 20px;
+  }
+
+  .kart-icerik img {
+    max-width: 150px;
+  }
+
+  .kart-icerik table {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 0.8em;
+    text-align: center;
+  }
+}
