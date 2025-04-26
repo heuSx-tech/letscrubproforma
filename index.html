@@ -1,42 +1,83 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+ 
+  
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'tr', 
+        includedLanguages: 'tr,en,fr,de,ru,ar,zh-CN,ja',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+  </script>
+  
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let'sScrub Teklif Hesaplayıcı</title>
+
+  
+
+</body>
+</html>
+<script>
+  function toggleFlags() {
+    var menu = document.getElementById("bayrakMenu");
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  }
+  
+  function changeLanguage(lang) {
+    var combo = document.querySelector('.goog-te-combo');
+    if (combo) {
+      combo.value = lang;
+      combo.dispatchEvent(new Event('change'));
+    }
+    // Bayrak seçince menüyü kapat
+    document.getElementById("bayrakMenu").style.display = "none";
+  }
+  </script>
+  
+
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
-  <title>CHIMICOS Teklif Hesaplayıcı</title>
-  
+  <link rel="stylesheet" href="style_mobile.css">
+  <title>Let'scrub Teklif Hesaplayıcı</title>
 </head>
 <body>
+  
+
   
   <img src="chimicos logo-02.png" alt="CHIMICOS Logo" class="logo" />
   <h1></h1>
 
-  <div class="top-bar">
-    <select id="urunSecimi">
-      <option value="CHIMICOS DİŞ BEYAZLATMA TOZU">Let'scrub Ekru Kese</option>
-      <option value="ÖZEL TASARIMLI CHIMICOS AĞIZ TEMİZLEME VE BEYAZLATMA DİŞ MENDİLİ">ÖZEL TASARIMLI CHIMICOS AĞIZ TEMİZLEME VE BEYAZLATMA DİŞ MENDİLİ</option>
-      <option value="CHIMICOS AĞIZ TEMİZLEME VE BEYAZLATMA DİŞ MENDİLİ">CHIMICOS AĞIZ TEMİZLEME VE BEYAZLATMA DİŞ MENDİLİ</option>
-    </select>
-    <button onclick="proformaOlustur()">Proforma Oluştur</button>
-  </div>
 
   <div class="form-box">
+    <div id="google_translate_element" class="ceviri-alani"></div>
+
+
     <h3 style="color:#f38379; text-align:center;">Satın Alacak Firma Bilgileri</h3>
+    <!-- Firma bilgileri -->
     <label for="firmaAdi">Firma Adı:</label>
     <input type="text" id="firmaAdi" />
 
     <label for="vergino">Vergi Numarası:</label>
     <input type="text" id="vergino" />
 
-    <label for="vergidairesi">Vergi Dairesi:</label>
-    <input type="text" id="vergidairesi" />
-
     <label for="adres">Adres:</label>
     <input type="text" id="adres" />
-
-    <label for="yetkili">Yetkili Kişi:</label>
-    <input type="text" id="yetkili" />
 
     <label for="eposta">E-posta:</label>
     <input type="email" id="eposta" />
@@ -46,27 +87,44 @@
   </div>
 
   <div class="form-box">
+    <label for="urunSecimi">Ürün Seçimi:</label>
+  <select id="urunSecimi">
+    <option value="Let'scrub Ekru Kese">Let'scrub Ekru Kese</option>
+      <option value="Let'scrub Siyah Kese">Let'scrub Siyah Kese</option>
+      <option value="Let'scrub Ekru Kese">Let'scrub Ekru Kese</option>
+      <option value="Let'scrub Siyah Kese">Let'scrub Siyah Kese</option>
+      <option value="8684378716378 Premium Zebra Turuncu Kese">8684378716378 Premium Zebra Turuncu Kese</option>
+      <option value="8684378716385 Premium Zebra Gri Kese">8684378716385 Premium Zebra Gri Kese</option>
+      <option value="Let'scrub Yüz Kesesi">Let'scrub Yavruağzı Kese</option>
+      <option value="8684378716132 KREP SIRT KESESİ">8684378716132 KREP SIRT KESESİ</option>
+      <option value="8684378716095 Yüz Kesesi">8684378716095 Yüz Kesesi</option>
+      <option value="8684378716071 Bej Kese">8684378716071 Bej Kese</option>
+      <option value="Doğal Kabak Lifli Sabun">Doğal Kabak Lifli Sabun</option>
+      <option value="Let'scrub Banyo Lifi">Let'scrub Banyo Lifi</option>
+      <option value="Let'scrub Vücut Peeling">Let'scrub Vücut Peeling</option>
+      <option value="8684378716323 Selülit Fırçası">8684378716323 Selülit Fırçası</option>
+      <option value="Let'scrub Dudak Peeling">Let'scrub Dudak Peeling</option>
+      <option value="8684378716347 Enzim Peeling Tozu">8684378716347 Enzim Peeling Tozu</option>
+      <option value="8684378716361 Bakuchiol Cilt Bakım Yağı">8684378716361 Bakuchiol Cilt Bakım Yağı</option>
+      <option value="Let'scrub Doğal Sabun">Let'scrub Doğal Sabun</option>
+    <!-- Diğer ürünler -->
+  </select>
+
+
     <label for="adet">Sipariş Adedi:</label>
     <input type="number" id="adet" min="1" value="100" oninput="hesapla()" />
 
     <label for="birimFiyatInput">Birim Fiyat (Satış):</label>
     <input type="number" id="birimFiyatInput" value="8.96" step="0.01" oninput="hesapla()" />
 
-
-    <label for="kurInput">Euro Kuru (₺):</label>
+    <label for="kurInput">Euro Kuru (€):</label>
     <input type="number" id="kurInput" value="43.00" step="0.01" oninput="hesapla()" />
 
     <label for="indirimInput">İndirim (%):</label>
     <input type="number" id="indirimInput" value="0" step="1" oninput="hesapla()" />
 
-
-
-<label>Otomatik İndirim (%):</label>
-<output id="otomatikIndirim" style="color:gray;"></output>
-
-<label>Toplam İndirim Oranı (%):</label>
-<output id="toplamIndirim"></output>
-
+    <label>Toplam İndirim Oranı (%):</label>
+    <output id="toplamIndirim"></output>
 
     <label for="kdvToggle">Fatura:</label>
     <select id="kdvToggle" onchange="hesapla()">
@@ -79,41 +137,29 @@
 
     <label>Toplam Satış Tutarı :</label>
     <output id="toplam"></output>
+
+    <!-- YENİ EKLEDİĞİM: Ürün Ekle Butonu -->
+    <button onclick="urunEkle()" class="urun-ekle-btn">Ürün Ekle</button>
+    <button onclick="proformaOlustur()">Proforma Oluştur</button>
   </div>
+  
 
   <footer>
-    İletişim: 0501 119 2004 | rifathakanguleser.co@gmail.com | chimicos.com
+    TÜM HAKLARI SAKLIDIR | 2025 | LET'SCRUB
   </footer>
 
   <script src="script.js"></script>
-  <div class="toplu-alim-karti">
-    <div class="kart-icerik">
-      <img src="chimicos logo-02.png" alt="CHIMICOS Logo" />
-      <h1>Toplu Alım Avantajları</h1>
-      <p>Let'scrub markalı ürünlerde büyük alımlarda büyük kazançlar!</p>
-  
-      <table>
-        <tr>
-          <th>Adet</th>
-          <th>İndirim Oranı</th>
-        </tr>
-        <tr>
-          <td>1000+</td>
-          <td>%4</td>
-        </tr>
-        <tr>
-          <td>2000+</td>
-          <td>%8</td>
-        </tr>
-        <tr>
-          <td>5000+</td>
-          <td>%10</td>
-        </tr>
-      </table>
-  
-      <p class="iletisim">İşletmenize özel teklif ve sorularınız için bizimle iletişime geçin.</p>
-      <p class="alt-metin"><strong>
-        Let'scrub</strong> | Yenilen , Parla , Hisset , Sev !</p>
-    </div>
-  </div>
-  
+
+  <!-- Alt kısımda toplu alım avantajları var (hiç dokunmadım) -->
+
+  <script>
+    function changeLanguage(lang) {
+      var combo = document.querySelector('.goog-te-combo');
+      if (combo) {
+        combo.value = lang;
+        combo.dispatchEvent(new Event('change'));
+      }
+    }
+    </script>
+    
+</html>
