@@ -244,3 +244,55 @@ background-position: center;
     text-align: center;
   }
 }
+.ceviri-alani {
+  margin: 10px auto;
+  text-align: center;
+  background-color: #f38379; /* senin ana rengin */
+  border-radius: 12px;
+  padding: 8px 16px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ceviri-alani:hover {
+  background-color: #d46a68; /* hover rengi */
+}
+
+/* Google'ın kendi select kutusu */
+.goog-te-combo {
+  background-color: white;
+  color: #f38379;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Google Translate mini menüleri vs. gizle (daha temiz görünüm için) */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+body {
+  top: 0px !important;
+}
+.urun-ekle-btn {
+  background-color: #4CAF50; /* Yeşil renk */
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.urun-ekle-btn:hover {
+  background-color: #45a049;
+}
