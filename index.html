@@ -1,9 +1,53 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'tr', 
+        includedLanguages: 'tr,en,fr,de,ru,ar,zh-CN,ja',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+  </script>
+  
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Let'sScrub Teklif Hesaplayıcı</title>
+  <title>LET'SCRUB Teklif Hesaplayıcı</title>
+
+</body>
+</html>
+<script>
+  function toggleFlags() {
+    var menu = document.getElementById("bayrakMenu");
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  }
+  
+  function changeLanguage(lang) {
+    var combo = document.querySelector('.goog-te-combo');
+    if (combo) {
+      combo.value = lang;
+      combo.dispatchEvent(new Event('change'));
+    }
+    // Bayrak seçince menüyü kapat
+    document.getElementById("bayrakMenu").style.display = "none";
+  }
+  </script>
+  
+
+
   <link rel="stylesheet" href="style_mobile.css">
 </head>
 <body>
@@ -11,6 +55,7 @@
   <h1></h1>
 
   <div class="form-box">
+    <div id="google_translate_element" class="ceviri-alani"></div>
     <h3 style="color:#f38379; text-align:center;">Satın Alacak Firma Bilgileri</h3>
     <!-- Firma bilgileri -->
     <label for="firmaAdi">Firma Adı:</label>
@@ -33,38 +78,38 @@
     <label for="urunSecimi">Ürün Seçimi:</label>
     <select id="urunSecimi">
       
-       <option  value="8684378716026"	>DEEP EXFOLIATING MITT - ECRU -  FOR NORMAL SKIN	</option>
-        <option value="8684378716033">	DEEP EXFOLIATING MITT - BLACK - FOR NORMAL SKIN	</option>
-        <option value="8684378716040"	>DEEP EXFOLIATING MITT - TRİANGLE BLACK - FOR NORMAL SKIN	</option>
-        <option value="8684378716057" >DEEP EXFOLIATING MITT - SALMON - FOR SENSITIVE SKIN	</option>
-        <option value="8684378716071">	DEEP EXFOLIATING MITT - BEIGE - FOR SENSITIVE SKIN	</option>
-        <option value="8684378716378">	PREMIUM DEEP EXFOLIATING MITT - ORANGE - FOR NORMAL SKIN	</option>
-        <option value="8684378716385"	>PREMIUM DEEP EXFOLIATING MITT - GREY - FOR NORMAL SKIN	</option>
-        <option value="8684378716095"	>DEEP EXFOLIATING FACE MITT - SALMON - FOR ALL SKIN	</option>
-        <option value="8684378716132" >DEEP EXFOLIATING BACK MITT - WHITE - FOR ALL SKIN	</option>
-        <option value="8684378716309" >DEEP EXFOLIATING BACK MITT - BLACK - FOR ALL SKIN	</option>
-        <option value="8684378716323" >NATURAL HORSE HAIR ANTI- CELLULITE BRUSH 	</option>
-        <option value="8684378716149" >EXFOLIATING WASHCLOTH - ORANGE	</option>
-        <option value="8684378716156" >EXFOLIATING WASHCLOTH - GREEN	</option>
-        <option value="8684378716163" >EXFOLIATING WASHCLOTH - BLUE	</option>
-        <option value="8684378716170" >EXFOLIATING WASHCLOTH - YELLOW	</option>
-        <option value="8684378716224" >NATURAL LOOFAH SOAP BAR - ALOE VERA	</option>
-        <option value="8684378716231" >NATURAL LOOFAH SOAP BAR - RICE	</option>
-        <option value="8684378716248" >NATURAL LOOFAH SOAP BAR - COLLAGEN	</option>
-        <option value="8684378716255" >NATURAL LOOFAH SOAP BAR - TEA TREE	</option>
-        <option value="8684378716262" >NATURAL LOOFAH SOAP BAR - GOAT MILK 	</option>
-        <option value="8684378716279" >NATURAL LOOFAH SOAP BAR - HONEY AND MILK	</option>
-        <option value="8684378716392" >NATURAL OLIVE OIL SOAP - ROSE OIL	</option>
-        <option value="8684378716408" >NATURAL OLIVE OIL SOAP - LAVENDER OIL	</option>
-        <option value="8684378716415" >NATURAL OLIVE OIL SOAP - SNAIL EXTRACT	</option>
-        <option value="8684378716422" >NATURAL OLIVE OIL SOAP - SULFUR JUNIPER TAR	</option>
-        <option value="8684378716286" >EXFOLIATING BODY SCRUB - ANTIOXIDANT	</option>
-        <option value="8684378716293" >EXFOLIATING BODY SCRUB - COLD EFFECT	</option>
-        <option value="8684378716330" >MOISTURIZING LIP EXFOLIATOR 30 GR	</option>
-        <option value="8684378716347" >ENZYM POWDER PEELING	</option>
-        <option value="8684378716354" >24H SILKY BODY YOGURT - 250 ML	</option>
-        <option value="8684378716361" >BAKUCHIOL SKINCARE OIL Retinol Alternative 100 ML	</option>
-        <option value="8684378716439" >NATURAL PUMICE STONE	</option>
+       <option  value="8684378716026 - DEEP EXFOLIATING MITT - ECRU -  FOR NORMAL SKIN"	>DEEP EXFOLIATING MITT - ECRU -  FOR NORMAL SKIN	</option>
+        <option value="8684378716033 - DEEP EXFOLIATING MITT - BLACK - FOR NORMAL SKIN">	DEEP EXFOLIATING MITT - BLACK - FOR NORMAL SKIN	</option>
+        <option value="8684378716040 - DEEP EXFOLIATING MITT - TRİANGLE BLACK - FOR NORMAL SKIN"	>DEEP EXFOLIATING MITT - TRİANGLE BLACK - FOR NORMAL SKIN	</option>
+        <option value="8684378716057 - DEEP EXFOLIATING MITT - SALMON - FOR SENSITIVE SKIN" >DEEP EXFOLIATING MITT - SALMON - FOR SENSITIVE SKIN	</option>
+        <option value="8684378716071 - DEEP EXFOLIATING MITT - BEIGE - FOR SENSITIVE SKIN ">	DEEP EXFOLIATING MITT - BEIGE - FOR SENSITIVE SKIN	</option>
+        <option value="8684378716378 - PREMIUM DEEP EXFOLIATING MITT - ORANGE - FOR NORMAL SKIN ">	PREMIUM DEEP EXFOLIATING MITT - ORANGE - FOR NORMAL SKIN	</option>
+        <option value="8684378716385 - PREMIUM DEEP EXFOLIATING MITT - GREY - FOR NORMAL SKIN"	>PREMIUM DEEP EXFOLIATING MITT - GREY - FOR NORMAL SKIN	</option>
+        <option value="8684378716095 - DEEP EXFOLIATING FACE MITT - SALMON - FOR ALL SKIN"	>DEEP EXFOLIATING FACE MITT - SALMON - FOR ALL SKIN	</option>
+        <option value="8684378716132 - DEEP EXFOLIATING BACK MITT - WHITE - FOR ALL SKIN" >DEEP EXFOLIATING BACK MITT - WHITE - FOR ALL SKIN	</option>
+        <option value="8684378716309 - DEEP EXFOLIATING BACK MITT - BLACK - FOR ALL SKIN	" >DEEP EXFOLIATING BACK MITT - BLACK - FOR ALL SKIN	</option>
+        <option value="8684378716323 - NATURAL HORSE HAIR ANTI- CELLULITE BRUSH" >NATURAL HORSE HAIR ANTI- CELLULITE BRUSH 	</option>
+        <option value="8684378716149 - EXFOLIATING WASHCLOTH - ORANGE" >EXFOLIATING WASHCLOTH - ORANGE	</option>
+        <option value="8684378716156 - EXFOLIATING WASHCLOTH - GREEN" >EXFOLIATING WASHCLOTH - GREEN	</option>
+        <option value="8684378716163 - EXFOLIATING WASHCLOTH - BLUE" >EXFOLIATING WASHCLOTH - BLUE	</option>
+        <option value="8684378716170 - EXFOLIATING WASHCLOTH - YELLOW" >EXFOLIATING WASHCLOTH - YELLOW	</option>
+        <option value="8684378716224 - NATURAL LOOFAH SOAP BAR - ALOE VERA" >NATURAL LOOFAH SOAP BAR - ALOE VERA	</option>
+        <option value="8684378716231 - NATURAL LOOFAH SOAP BAR - RICE" >NATURAL LOOFAH SOAP BAR - RICE	</option>
+        <option value="8684378716248 - NATURAL LOOFAH SOAP BAR - COLLAGEN" >NATURAL LOOFAH SOAP BAR - COLLAGEN	</option>
+        <option value="8684378716255 - NATURAL LOOFAH SOAP BAR - TEA TREE" >NATURAL LOOFAH SOAP BAR - TEA TREE	</option>
+        <option value="8684378716262 - NATURAL LOOFAH SOAP BAR - GOAT MILK" >NATURAL LOOFAH SOAP BAR - GOAT MILK 	</option>
+        <option value="8684378716279 - NATURAL LOOFAH SOAP BAR - HONEY AND MILK" >NATURAL LOOFAH SOAP BAR - HONEY AND MILK	</option>
+        <option value="8684378716392 - NATURAL OLIVE OIL SOAP - ROSE OIL" >NATURAL OLIVE OIL SOAP - ROSE OIL	</option>
+        <option value="8684378716408 - NATURAL OLIVE OIL SOAP - LAVENDER OIL" >NATURAL OLIVE OIL SOAP - LAVENDER OIL	</option>
+        <option value="8684378716415 - NATURAL OLIVE OIL SOAP - SNAIL EXTRACT" >NATURAL OLIVE OIL SOAP - SNAIL EXTRACT	</option>
+        <option value="8684378716422 - NATURAL OLIVE OIL SOAP - SULFUR JUNIPER TAR" >NATURAL OLIVE OIL SOAP - SULFUR JUNIPER TAR	</option>
+        <option value="8684378716286 - EXFOLIATING BODY SCRUB - ANTIOXIDANT" >EXFOLIATING BODY SCRUB - ANTIOXIDANT	</option>
+        <option value="8684378716293 - EXFOLIATING BODY SCRUB - COLD EFFECT" >EXFOLIATING BODY SCRUB - COLD EFFECT	</option>
+        <option value="8684378716330 - MOISTURIZING LIP EXFOLIATOR 30 GR" >MOISTURIZING LIP EXFOLIATOR 30 GR	</option>
+        <option value="8684378716347 - ENZYM POWDER PEELING" >ENZYM POWDER PEELING	</option>
+        <option value="8684378716354 - 24H SILKY BODY YOGURT - 250 ML" >24H SILKY BODY YOGURT - 250 ML	</option>
+        <option value="8684378716361 - BAKUCHIOL SKINCARE OIL Retinol Alternative 100 ML" >BAKUCHIOL SKINCARE OIL Retinol Alternative 100 ML	</option>
+        <option value="8684378716439 - NATURAL PUMICE STONE	" >NATURAL PUMICE STONE	</option>
         
     </select>
 
@@ -74,8 +119,8 @@
     <label for="birimFiyatInput">Birim Fiyat:</label>
     <input type="number" id="birimFiyatInput" value="8.96" step="0.01" read />
 
-    <label for="kurInput">Euro Kuru (€):</label>
-    <input type="number" id="kurInput" value="43.00" step="0.01" oninput="hesapla()" />
+    <label for="kurInput">Dolar Kuru ($):</label>
+    <input type="number" id="kurInput" value="38.50" step="0.01" oninput="hesapla()" />
 
     <label for="indirimInput">İndirim (%):</label>
     <input type="number" id="indirimInput" value="0" step="1" oninput="hesapla()" />
@@ -86,14 +131,15 @@
       <option value="hayir">Hayır</option>
     </select>
 
-    <label>İndirimli Satış Fiyatı:</label>
+    <label>İndirimli Satış Fiyatı $ :</label>
     <output id="birim"></output>
 
-    <label>Toplam Satış Tutarı :</label>
+    <label>Toplam Satış Tutarı $ :</label>
     <output id="toplam"></output>
 
     <button onclick="urunEkle()" class="urun-ekle-btn">Ürün Ekle</button>
     <button onclick="proformaOlustur()">Proforma Oluştur</button>
+    <div id="proformaContainer" style="display: none;"></div>
   </div>
 
   <footer>
