@@ -1,3 +1,4 @@
+body { position: relative; }
 
     body {
       background-image: url('arkaplan.png'); 
@@ -296,3 +297,10 @@ body {
 .urun-ekle-btn:hover {
   background-color: #45a049;
 }
+.main-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
