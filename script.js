@@ -36,6 +36,39 @@ const urunFiyatlari = {
 "8684378716361 - BAKUCHIOL SKINCARE OIL Retinol Alternative - 100 ML": { "1000-5000": 4.40, "5000-10000": 4.30, "10000+": 4.20 },
 "8684378716439 - NATURAL PUMICE STONE - 1PCS": { "1000-5000": 0.60, "5000-10000": 0.50, "10000+": 0.40 },
 
+"8684378716026 - PRIV DEEP EXFOLIATING MITT - ECRU": { "1000-5000": 2.85, "5000-10000": 2.75, "10000+": 2.65 },
+"8684378716033 - PRIV DEEP EXFOLIATING MITT - BLACK": { "1000-5000": 2.85, "5000-10000": 2.75, "10000+": 2.65 },
+"8684378716040 - PRIV DEEP EXFOLIATING MITT - TRİANGLE BLACK": { "1000-5000": 2.85, "5000-10000": 2.75, "10000+": 2.65 },
+"8684378716057 - PRIV DEEP EXFOLIATING MITT - SALMON - FOR SENSITIVE SKIN": { "1000-5000": 2.85, "5000-10000": 2.75, "10000+": 2.65 },
+"8684378716071 - PRIV DEEP EXFOLIATING MITT - BEIGE - FOR SENSITIVE SKIN": { "1000-5000": 2.85, "5000-10000": 2.75, "10000+": 2.65 },
+"8684378716378 - PRIV PREMIUM DEEP EXFOLIATING MITT - ORANGE ": { "1000-5000": 2.85, "5000-10000": 2.75, "10000+": 2.65 },
+"8684378716385 - PRIV PREMIUM DEEP EXFOLIATING MITT - GREY ": { "1000-5000": 2.85, "5000-10000": 2.75, "10000+": 2.65 },
+"8684378716095 - PRIV DEEP EXFOLIATING FACE MITT - SALMON - FOR ALL SKIN": { "1000-5000": 2.10, "5000-10000": 2.00, "10000+": 1.90 },
+"8684378716132 - PRIV DEEP EXFOLIATING BACK MITT - WHITE ": { "1000-5000": 6.10, "5000-10000": 6.00, "10000+": 5.90 },
+"8684378716309 - PRIV DEEP EXFOLIATING BACK MITT - BLACK ": { "1000-5000": 6.10, "5000-10000": 6.00, "10000+": 5.90 },
+"8684378716323 - PRIV NATURAL HORSE HAIR ANTI- CELLULITE BRUSH": { "1000-5000": 5.00, "5000-10000": 4.90, "10000+": 4.80 },
+"8684378716149 - PRIV EXFOLIATING WASHCLOTH - ORANGE": { "1000-5000": 2.55, "5000-10000": 2.45, "10000+": 2.35 },
+"8684378716156 - PRIV EXFOLIATING WASHCLOTH - GREEN": { "1000-5000": 2.55, "5000-10000": 2.45, "10000+": 2.35 },
+"8684378716163 - PRIV EXFOLIATING WASHCLOTH - BLUE": { "1000-5000": 2.55, "5000-10000": 2.45, "10000+": 2.35 },
+"8684378716170 - PRIV EXFOLIATING WASHCLOTH - YELLOW": { "1000-5000": 2.55, "5000-10000": 2.45, "10000+": 2.35 },
+"8684378716224 - PRIV NATURAL LOOFAH SOAP BAR - ALOE VERA - 130 GR": { "1000-5000": 1.90, "5000-10000": 1.80, "10000+": 1.70 },
+"8684378716231 - PRIV NATURAL LOOFAH SOAP BAR - RICE - 130 GR": { "1000-5000": 1.90, "5000-10000": 1.80, "10000+": 1.70 },
+"8684378716248 - PRIV NATURAL LOOFAH SOAP BAR - COLLAGEN - 130 GR": { "1000-5000": 1.90, "5000-10000": 1.80, "10000+": 1.70 },
+"8684378716255 - PRIV NATURAL LOOFAH SOAP BAR - TEA TREE - 130 GR": { "1000-5000": 1.90, "5000-10000": 1.80, "10000+": 1.70 },
+"8684378716262 - PRIV NATURAL LOOFAH SOAP BAR - GOAT MILK - 130 GR": { "1000-5000": 1.90, "5000-10000": 1.80, "10000+": 1.70 },
+"8684378716279 - PRIV NATURAL LOOFAH SOAP BAR - HONEY AND MILK - 130 GR": { "1000-5000": 1.90, "5000-10000": 1.80, "10000+": 1.70 },
+"8684378716392 - PRIV NATURAL OLIVE OIL SOAP - ROSE OIL - 100 GR": { "1000-5000": 1.75, "5000-10000": 1.65, "10000+": 1.55 },
+"8684378716408 - PRIV NATURAL OLIVE OIL SOAP - LAVENDER OIL - 100 GR": { "1000-5000": 1.75, "5000-10000": 1.65, "10000+": 1.55 },
+"8684378716415 - PRIV NATURAL OLIVE OIL SOAP - SNAIL EXTRACT - 100 GR": { "1000-5000": 1.75, "5000-10000": 1.65, "10000+": 1.55 },
+"8684378716422 - PRIV NATURAL OLIVE OIL SOAP - SULFUR JUNIPER TAR - 100 GR": { "1000-5000": 1.75, "5000-10000": 1.65, "10000+": 1.55 },
+"8684378716286 - PRIV EXFOLIATING BODY SCRUB - ANTIOXIDANT - 280 GR": { "1000-5000": 4.10, "5000-10000": 4.00, "10000+": 3.90 },
+"8684378716293 - PRIV EXFOLIATING BODY SCRUB - COLD EFFECT - 280 GR": { "1000-5000": 4.00, "5000-10000": 3.90, "10000+": 3.80 },
+"8684378716330 - PRIV MOISTURIZING LIP EXFOLIATOR 30 GR": { "1000-5000": 3.20, "5000-10000": 3.10, "10000+": 3.00 },
+"8684378716347 - PRIV ENZYM POWDER PEELING - 75 GR": { "1000-5000": 4.00, "5000-10000": 3.90, "10000+": 3.80 },
+"8684378716354 - PRIV 24H SILKY BODY YOGURT - 250 ML": { "1000-5000": 4.00, "5000-10000": 3.90, "10000+": 3.80 },
+"8684378716361 - PRIV BAKUCHIOL SKINCARE OIL Retinol Alternative - 100 ML": { "1000-5000": 4.40, "5000-10000": 4.30, "10000+": 4.20 },
+"8684378716439 - PRIV NATURAL PUMICE STONE - 1PCS": { "1000-5000": 0.60, "5000-10000": 0.50, "10000+": 0.40 },
+
 
   // Diğer ürünler eklenmeli
 };
@@ -136,12 +169,12 @@ function proformaOlustur() {
       <div style="position: relative; top: 55px; right: -5px;">
       <h2>PROFORMA FATURA</h2>
       </div>
-     <div style="position: relative; top: -50px; right: -900px;">
+     <div style="position: relative; top: -50px; right: -600px;">
   <p><strong>Tarih:</strong> ${bugun}</p>
 </div>
 
       <p>
-       <strong>__________________________________________________________________________________________________</strong><br>
+       <strong>_________________________________________________________________________________</strong><br>
        <br> <strong> UĞURLU GRUP İNTERNET MAĞAZACILIK<br>
  SANAYİ VE TİCARET LİMİTED ŞİRKETİ</strong> <br>
  <p class="footer">
@@ -151,7 +184,7 @@ function proformaOlustur() {
  VKN: 8861004082
  <br>Vergi Dairesi: ÇEKİRGE V.D
  <p>
-       <strong>__________________________________________________________________________________________________</strong><br>
+       <strong>_________________________________________________________________________________</strong><br>
       </p>
       
         <strong>Firma:</strong> ${firmaAdi}<br>
@@ -160,7 +193,7 @@ function proformaOlustur() {
         <strong>E-posta:</strong> ${eposta}<br>
         <strong>Telefon:</strong> ${telefon}<br>
 
-        <strong>__________________________________________________________________________________________________</strong><br>
+        <strong>_________________________________________________________________________________</strong><br>
       </p>
 
       <table>
