@@ -193,9 +193,9 @@ function proformaOlustur() {
        <br> <strong> UĞURLU GRUP İNTERNET MAĞAZACILIK<br>
  SANAYİ VE TİCARET LİMİTED ŞİRKETİ</strong> <br>
  <p class="footer">
-        Adres: ALAADDİNBEY MH.626.SK-SAM-1 PLAZA B BLOK  <br>
+        Adres: Mahalle/Semt:KURTULUŞ MAH. Cadde/Sokak:1.(510) SK. MANOLYA SITESI <br>
          Bina
- No:22 Kapı No:12 Nilüfer/ BURSA <br>
+ A Blok Kapı No:12 B/B <br>
  VKN: 8861004082
  <br>Vergi Dairesi: ÇEKİRGE V.D
  <p>
