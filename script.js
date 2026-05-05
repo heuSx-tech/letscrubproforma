@@ -84,7 +84,10 @@ const urunFiyatlari = {
   "8684378716361 - PRIV BAKUCHIOL SKINCARE OIL Retinol Alternative - 100 ML": { "1000-5000": 4.40, "5000-10000": 4.30, "10000+": 4.20 },
   "8684378716439 - PRIV NATURAL PUMICE STONE - 1PCS": { "1000-5000": 0.60, "5000-10000": 0.50, "10000+": 0.40 }
 };
-
+function urunDegisti() {
+  manuelFiyatGirildi = false;
+  hesapla();
+}
 function hesapla() {
   const adetInput = document.getElementById("adet");
   const urunSecimiInput = document.getElementById("urunSecimi");
