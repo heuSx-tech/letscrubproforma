@@ -91,7 +91,6 @@ function hesapla() {
   const indirimInput = document.getElementById("indirimInput");
   const kdvToggle = document.getElementById("kdvToggle");
 
-  // Eğer sayfa yüklenmeden fonksiyon çağrılırsa hata almamak için basit güvenlik kontrolü
   if (!adetInput || !urunSecimiInput) return;
 
   const adet = parseFloat(adetInput.value) || 0;
@@ -105,7 +104,6 @@ function hesapla() {
   const fiyatlar = urunFiyatlari[urunSecimi];
   let birimFiyat = 0;
 
-  // Ürünün PRIV mi yoksa normal ürün mü olduğunu kontrol ederek fiyat aralıklarını belirleme
   if (urunSecimi.includes("PRIV")) {
     if (adet >= 10000) birimFiyat = fiyatlar["10000+"] || fiyatlar["5000-10000"];
     else if (adet >= 5000) birimFiyat = fiyatlar["5000-10000"] || fiyatlar["1000-5000"];
@@ -115,7 +113,6 @@ function hesapla() {
     else birimFiyat = fiyatlar["500-2000"];
   }
 
-  // Güvenlik: Fiyat bir sebeple bulunamadıysa 0 olsun
   if (!birimFiyat) birimFiyat = 0;
 
   const toplamIndirimOrani = manuelIndirim;
@@ -126,7 +123,6 @@ function hesapla() {
     toplam *= (1 + kdvOrani / 100);
   }
 
-  // Ekrana yansıtma (Eğer ilgili elemanlar DOM'da varsa)
   const birimEl = document.getElementById("birim");
   const toplamEl = document.getElementById("toplam");
   const birimFiyatInputEl = document.getElementById("birimFiyatInput");
@@ -134,7 +130,6 @@ function hesapla() {
   if (birimEl) birimEl.textContent = birimFiyatIndirimli.toFixed(2);
   if (toplamEl) toplamEl.textContent = toplam.toFixed(2);
   
-  // Eğer kullanıcı eliyle inputa bir fiyat girmediyse inputu dinamik olarak güncelle
   if (!manuelFiyatGirildi && birimFiyatInputEl) {
      birimFiyatInputEl.value = birimFiyatIndirimli.toFixed(2);
   }
@@ -169,7 +164,6 @@ function urunEkle() {
 function proformaOlustur() {
   hesapla();
 
-  // Değerleri güvenli bir şekilde almak için yardımcı fonksiyon
   const getVal = (id) => document.getElementById(id) ? document.getElementById(id).value : "";
 
   const firmaAdi = getVal("firmaAdi");
@@ -289,12 +283,37 @@ TR80 0004 6011 7903 6000 0897 74
   win.document.write(proformaHTML);
   win.document.close();
 
-  // Proforma oluşturulunca ürün listesi sıfırlansın
   urunler = [];
 }
 
 window.onload = hesapla;
 
+// --- EKLENEN EVENT LİSTENER'LAR (DÜZELTME BURADA) ---
+
+const urunSecimiEl = document.getElementById("urunSecimi");
+if (urunSecimiEl) {
+  urunSecimiEl.addEventListener("change", function () {
+    manuelFiyatGirildi = false; // Yeni ürün seçildiğinde manuel girişi sıfırla
+    hesapla(); // Fiyatı anında güncelle
+  });
+}
+
+const adetEl = document.getElementById("adet");
+if (adetEl) {
+  adetEl.addEventListener("input", hesapla); // Adet değiştiğinde anında güncelle
+}
+
+const indirimEl = document.getElementById("indirimInput");
+if (indirimEl) {
+  indirimEl.addEventListener("input", hesapla); // İndirim değiştiğinde anında güncelle
+}
+
+const kdvToggleEl = document.getElementById("kdvToggle");
+if (kdvToggleEl) {
+  kdvToggleEl.addEventListener("change", hesapla); // KDV değiştiğinde anında güncelle
+}
+
+// Manuel fiyat girişi için dinleyici
 const birimFiyatInputEl = document.getElementById("birimFiyatInput");
 if (birimFiyatInputEl) {
   birimFiyatInputEl.addEventListener("input", function () {
