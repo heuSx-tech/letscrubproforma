@@ -98,15 +98,15 @@ function hesapla() {
 
   // Seçilen ürüne ait fiyat aralıklarını al
   const fiyatlar = urunFiyatlari[urunSecimi];
-  let birimFiyat = fiyatlar["1000-5000"]; // Varsayılan fiyat
+  let birimFiyat = fiyatlar["500-2000"]; // Varsayılan fiyat
   
   
 
   // Adet sayısına göre fiyatı seç
-  if (adet >= 10000) {
-    birimFiyat = fiyatlar["10000+"];
-  } else if (adet >= 5000) {
-    birimFiyat = fiyatlar["5000-10000"];
+  if (adet >= 5000) {
+    birimFiyat = fiyatlar["5000+"];
+  } else if (adet >= 2000) {
+    birimFiyat = fiyatlar["2001-5000"];
   }
 
   let otomatikIndirim = 0;
